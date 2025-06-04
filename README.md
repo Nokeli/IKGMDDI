@@ -19,9 +19,9 @@ cd IKGMDDI
 pip install -r requirements.txt
 
 ## run code
-1. For Binary—classification task in kegg dataset or drugbank datasets, you can run:
+1. For Binary—classification task, you can run:
 ```
-python train_on_fold_our.py or python train_on_fold_our_drugbank.py
+python train_on_fold_our.py
 ```
 
 2.For multi-classification task in drugbank datasets, you can run:
