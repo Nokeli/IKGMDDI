@@ -19,6 +19,7 @@ cd IKGMDDI
 pip install -r requirements.txt
 
 ## run code
+
 1. For Binary—classification task, you can run:
 ```
 python train_on_fold_our.py
