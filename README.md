@@ -19,13 +19,14 @@ cd IKGMDDI
 pip install -r requirements.txt
 
 ## run code
-1. For datasets, You can get its from the link(https://drive.google.com/file/d/1oGkck0F7hDmQBsNOEbnM2uJRPwnLwiuI/view?usp=sharing)
-1. For Binary—classification task, you can run:
+1. For datasets, You can get its from the link
+https://drive.google.com/file/d/1oGkck0F7hDmQBsNOEbnM2uJRPwnLwiuI/view?usp=sharing
+2. For Binary—classification task, you can run:
 ```
 python train_on_fold_our.py
 ```
 
-2.For multi-classification task in drugbank datasets, you can run:
+3.For multi-classification task in drugbank datasets, you can run:
 ```
 python train_on_fold_our.py
 ```
