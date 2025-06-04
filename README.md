@@ -1,7 +1,7 @@
 # IKGMDDI  
 
 **Integrated Knowledge Graph and Drug Molecular Graph Fusion via Adversarial Networks for Drug–Drug Interaction Prediction**  
-[![DOI](https://img.shields.io/badge/DOI-10.1109%2FJBHI.2024.3483812-blue)](https://pubs.acs.org/doi/10.1021/acs.jcim.4c01647)
+[![DOI](https://img.shields.io/badge/DOI-10.1021%2Facs.jcim.4c01647-blue)](https://pubs.acs.org/doi/10.1021/acs.jcim.4c01647)
 
 Official implementation of the IKGMDDI model for drug-drug interaction prediction.
 
