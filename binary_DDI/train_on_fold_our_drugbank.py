@@ -136,8 +136,8 @@ def load_feat(file_path:str,drug_list):
     result = np.array(loaded_array)
     loaded_array = pca.fit_transform(result)
     return loaded_array
-generate_dict('data/drugbank/entity2id_new.txt','data/drugbank/relation2id.txt')
-new_example_matrix= read_example_file('data/drugbank/binary_class_approved_example_rewrite.txt',' ')
+generate_dict('data/deepddi/entity2id_new.txt','data/deepddi/relation2id.txt')
+new_example_matrix= read_example_file('data/deepddi/binary_class_approved_example_rewrite.txt',' ')
 drug_list = [i for i in range(1704)]
 num_drug = 1704
 new_example_matrix = np.array(new_example_matrix)
@@ -152,7 +152,7 @@ kg = read_kg('data/drugbank/train2id_refined.txt')
 # all_edges,all_labels = get_full_dataset() #Get all DDIs in dataset
 
 
-feat_mat = load_feat('data/drugbank/mol_emb.npy',drug_list)
+feat_mat = load_feat('data/deepddi/mol_emb.npy',drug_list)
 feat_mat = torch.from_numpy(feat_mat)
 drug_list = drug_list.to(device)
 feat_mat = feat_mat.to(device)
