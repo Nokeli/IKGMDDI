@@ -14,21 +14,17 @@ Official implementation of the IKGMDDI model for drug-drug interaction predictio
 
 ### Quick Installation  
 ```bash  
-git clone https://github.com/Nokeli/MRGCDDI.git  
-cd MRGCDDI  
+https://github.com/Nokeli/IKGMDDI.git 
+cd IKGMDDI  
 pip install -r requirements.txt
 
 ## run code
-We provide a sample based on Deng's dataset.
-
-1.In order to learn the desired representation, the path of the dataset in the 'drugfeature_fromMG.py' file needs to be changed to your own path. If you want to run it on your own dataset, please ensure that the data in the "trimnet" fold is the same as that in the fold.
+1. For Binary—classification task in kegg dataset or drugbank datasets, you can run:
 ```
-python drugfeature_fromMG.py
+python train_on_fold_our.py or python train_on_fold_our_drugbank.py
 ```
 
-2.Training/validating/testing for 5 times and get the average scores of multiple metrics.
+2.For multi-classification task in drugbank datasets, you can run:
 ```
-python 5timesrun.py
+python train_on_fold_our.py
 ```
-
-3. You can see the final results of 5 runs in 'test.txt'
